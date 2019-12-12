@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <!-- 網頁標題 -->
     <title>自我介紹</title>
+	
 </head>
 
 <body style="font-family: '微軟正黑體';">
@@ -13,7 +14,7 @@
     <hr style=" border-width: 1px; display: inline-block;" align="left" width="800" />
 
     <p style="font-size: 17px;">
-        <span style="font-weight: bold;">姓名:</span>
+        <span style="font-weight: bold;">姓名:狸貓</span>
     </p>
 
     <p style="font-size: 17px;">
@@ -39,8 +40,10 @@
     <p style="font-size: 17px;">
         <span style="font-weight: bold;">我想多了解你，可不可以告訴我關於你的其他事情呢:</span>
     </p>
-
-    <!-- 你能新增更多介紹嗎？ -->
+	<!-- 新增一個按鈕在畫面上 -->
+	<button type="button" onclick="handleButtonClick()">點擊按鈕!</button>
+    
+	<!-- 你能新增更多介紹嗎？ -->
 
     <!--圖片區塊-->
     <div style="font-family: '微軟正黑體'; font-size: 30px; font-weight: bold; margin-bottom: 15px">放一些圖片讓大家更認識你的興趣
@@ -78,5 +81,13 @@
         </tr>
     </table>
 </body>
+<script>
 
+function handleButtonClick(){
+	//這裡是你點了按鈕後你希望要做的事情
+	alert("你點了按鈕!!!!");
+	console.log("你點了按鈕!!!!");
+	
+}
+</script>
 </html>
