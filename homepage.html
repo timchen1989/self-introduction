@@ -5,13 +5,18 @@
     <meta charset="utf-8" />
     <!-- 網頁標題 -->
     <title>自我介紹</title>
-	
+
+    <!-- Bootstrape CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="font-family: '微軟正黑體';">
     <!-- 自我介紹內容 -->
     <h1 style="margin-bottom:10px">XXX的自我介紹</h1>
-    <hr style=" border-width: 1px; display: inline-block;" align="left" width="800" />
+    <hr class="divider">
 
     <p style="font-size: 17px;">
         <span style="font-weight: bold;">姓名:狸貓</span>
@@ -80,14 +85,41 @@
             <!-- 你能新增更多圖片嗎？-->
         </tr>
     </table>
-</body>
-<script>
 
-function handleButtonClick(){
-	//這裡是你點了按鈕後你希望要做的事情
-	alert("你點了按鈕!!!!");
-	console.log("你點了按鈕!!!!");
-	
-}
-</script>
+    <!-- 彈出視窗 -->
+    <hr class="divider">
+    <h3>設計你的客製化視窗！</h3>
+    <!-- 觸發彈出視窗的按鈕 -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        點起來
+    </button>
+
+    <!-- 視窗物件 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">視窗標題</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- 視窗內容 -->
+            <div class="modal-body">
+              <p>123456</p>
+              <img class="img-center" src="images/Cat-5.gif"/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
